@@ -1,0 +1,146 @@
+/** {box-sizing: border-box;}*/
+
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+  }
+  
+  body {
+    width: 100%;
+    margin: auto;
+    line-height: 2;
+    font-family: 'Orelega One', cursive;
+    
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    align-items: center;
+    background: rgb(29, 29, 29);
+  }
+  
+  header nav {
+    text-align: center;
+    
+  }
+  
+  header nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  header nav a:hover {
+    color: #fff;
+    background: #292929;
+  }
+  
+  header nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #292929;
+    left: 0;
+  }
+
+ 
+  main>img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  
+  
+  .mySlides {display: none;}
+  /*section img {vertical-align: middle;}*/
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+ 
+  
+  .numberimage {
+    color: #f2f2f2;
+    font-size: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  
+/*@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }*/
+  
+
+ 
+
+  footer {
+
+    display: grid;
+    grid-template-columns: repeat(5 f1r);
+    text-align: center;
+    padding-left: 10px; 
+    padding-bottom: 10px;
+    background-color: #292929;
+    margin-top: 25px;
+    
+}
+
+
+  footer ul li{
+
+    text-align: center;
+    padding-left: 10px; 
+    padding-bottom: 10px;
+    background-color: #292929;
+}
+
+footer li {
+    
+    display: inline-block;
+    padding-left: 5px;
+}
+
+footer li:hover {
+    background-color: #000;
+    color: #fff;
+}
